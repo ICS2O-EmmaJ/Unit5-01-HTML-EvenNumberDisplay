@@ -1,27 +1,27 @@
-// Copyright (c) 2022 Ms Raffin All rights reserved
-//
-// Created by: Ms Raffin
-// Created on: May 2022
+// Created by: Emma Janani
+// Created in: May 2022
 // This file contains the JS functions for index.html
 
 "use strict"
 
-/**
- * This function displays all numbers from 0 up to the user number
- */
 function displayNumbers() {
-  	// initialize the counter to 0
-	let counter = 0
 	// initalize numbers as an empty string
 	let numbers = ""
 	
-	// get the user number
-	let userNum = parseInt(document.getElementById('userNum').value)	
+	// get the user min and max
+	let userMin = parseInt(document.getElementById('userMin').value)	
+	let userMax = parseInt(document.getElementById('userMax').value)	
 
-	// use a while loop to display the numbers from 0 up to the user number
-	while (counter <= userNum) {
-		// build the string of numbers with a line break each time
-		numbers = numbers + counter + "<br>"
+  // initialize the counter to 0
+	let counter = userMin
+  
+	// use a while loop to display the numbers from min up to the max number
+	while ((counter >= userMin) && (counter <= userMax)) {
+    if (counter % 2 == 0) {
+      	 // build the string of numbers with a line break each time
+		     numbers = numbers + counter + "<br>"
+    }
+  
 		// increment the counter
 		counter = counter +1
 	}

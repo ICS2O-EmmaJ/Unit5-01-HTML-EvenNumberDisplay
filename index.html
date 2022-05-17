@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta name="description" content="User Input, with JavaScript">
     <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Ms Raffin">
+    <meta name="author" content="Emma Janani">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
-    <link rel="manifest" href="./fav/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Number Display in JS</title>
+    <title>Even Numbers Display in JS</title>
   </head>
   <body>
     <script src="./js/script.js"></script>
-	  
-    <h1>NumberDisplay in JS</h1>
-		<h3>This program will display all numbers from  0 up to your number:</h3>
+    <h1>Even Numbers Display in JS</h1>
+		<h3>This program will display all numbers from  the min up to the max number:</h3>
 		<table>
+    <!-- Getting User Input -->
 			<tr align = "center">
 				<td valign="top" align="right">					
 					<form action="javascript:displayNumbers()">						
-						<label for="userNum">Enter a Number:</label>
-						<input type="number" step="1" min="0" id="userNum"><br><br>		
-						
+						<label for="userMin">Enter a Min Number:</label>
+						<input type="number" step="1" min="0" id="userMin"><br><br>		
+						<label for="userMax">Enter a Max Number:</label>
+						<input type="number" step="1" min="0" id="userMax"><br><br>	
 						<input type="submit" value="Display Numbers">
 					</form>
 				</td>
-				<td valign="top" align="left">
-					<img src="./images/numbers.jpeg" alt="Numbers" width="40%">
-				</td>
 			</tr>
 		</table>	
+		<img src="./images/numbers.jpeg" alt="Numbers" width="15%">
 		<!-- Create a space where the user information will be displayed -->
 		<div id="display-results">			
 		</div>
-	
   </body>
 </html>
